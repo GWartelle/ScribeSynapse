@@ -1,5 +1,6 @@
-import { Navbar } from "flowbite-react";
+import { Button, Navbar, TextInput } from "flowbite-react";
 import { Link } from "react-router-dom";
+import { AiOutlineSearch } from "react-icons/ai";
 
 export default function Header() {
   return (
@@ -13,6 +14,17 @@ export default function Header() {
           Synapse
         </span>
       </Link>
+      <form>
+        <TextInput
+          type="text"
+          placeholder="Search..."
+          rightIcon={AiOutlineSearch}
+          className="hidden lg:inline"
+        />
+      </form>
+      <Button className="w-12 h-10 lg:hidden" color="gray" pill>
+        <AiOutlineSearch />
+      </Button>
     </Navbar>
   );
 }
