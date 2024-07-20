@@ -11,7 +11,7 @@ export default function Header() {
         className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
         Scribe
-        <span className="px-2 pb-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-lg text-white">
+        <span className="px-2 pb-1 bg-gradient-to-r from-cyan-500 via-indigo-500 via-35% to-pink-500 rounded-lg text-white">
           Synapse
         </span>
       </Link>
@@ -26,10 +26,13 @@ export default function Header() {
       <Button className="w-12 h-10 lg:hidden" color="gray" pill>
         <AiOutlineSearch />
       </Button>
-      <div>
+      <div className="flex gap-2 md:order-2">
         <Button className="w-12 h-10 hidden sm:inline" color="gray" pill>
           <FaMoon />
         </Button>
+        <Link to="/sign-in">
+          <Button gradientDuoTone="purpleToPink">Sign In</Button>
+        </Link>
       </div>
     </Navbar>
   );
