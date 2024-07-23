@@ -52,7 +52,7 @@ export default function SignUp() {
         <div className="flex-1">
           <Link to="/" className="font-bold dark:text-white text-4xl">
             Scribe
-            <span className="px-2 pb-1 bg-gradient-to-r from-cyan-500 via-indigo-500 via-35% to-pink-500 rounded-lg text-white">
+            <span className="px-2 pb-1 bg-gradient-to-r from-lime-300 via-indigo-500 via-35% to-pink-500 rounded-lg text-white">
               Synapse
             </span>
           </Link>
