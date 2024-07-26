@@ -28,8 +28,8 @@ export const signup = async (req, res, next) => {
   try {
     await newUser.save();
     res.json({ message: "Signup successful" });
-  } catch (err) {
-    next(err);
+  } catch (error) {
+    next(error);
   }
 };
 
@@ -61,7 +61,7 @@ export const signin = async (req, res, next) => {
         httpOnly: true,
       })
       .json(rest);
-  } catch (err) {
-    next(err);
+  } catch (error) {
+    next(error);
   }
 };
