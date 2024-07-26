@@ -57,7 +57,9 @@ export default function SignUp() {
             </span>
           </Link>
           <p className="text-sm mt-5">
-            Welcome to ScribeSynapse, the blog made just for you.
+            Welcome to ScribeSynapse, the blog made just for you. Here you can
+            sign up by entering a username, your email address and a password.
+            Or you can use your google account to sign up.
           </p>
         </div>
         {/* RIGHT */}
@@ -106,7 +108,7 @@ export default function SignUp() {
             </Button>
           </form>
           <div className="flex gap-2 text-sm mt-5">
-            <span>Have an account?</span>
+            <span>Already have an account?</span>
             <Link to="/sign-in" className="text-blue-500">
               Sign In
             </Link>
