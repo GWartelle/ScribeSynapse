@@ -5,6 +5,7 @@ import { FaMoon } from "react-icons/fa";
 
 export default function Header() {
   const path = useLocation().pathname;
+  
   return (
     <Navbar className="border-b-2">
       <Link
