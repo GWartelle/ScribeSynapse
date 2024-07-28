@@ -1,5 +1,5 @@
 import { Button, TextInput } from "flowbite-react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSelector } from "react-redux";
 
 export default function DashProfile() {
@@ -14,6 +14,16 @@ export default function DashProfile() {
       setImageFile(file);
       setImageFileUrl(URL.createObjectURL(file));
     }
+  };
+
+  useEffect(() => {
+    if (imageFile) {
+      uploadImage();
+    }
+  });
+
+  const uploadImage = async () => {
+    console.log("uploading image...");
   };
 
   return (
